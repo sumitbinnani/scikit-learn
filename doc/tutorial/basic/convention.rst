@@ -99,7 +99,7 @@ A dataset is imbalanced if the classification categories are not approximately e
 
 Sample Weight
 ~~~~~~~~~~~~~
-| Samples with higher ```sample_weight``` are given more importance while training the classifier. That is the ```recall``` for _similar samples_ will be higher. Can be also imagined as including duplicate samples in training set for samples with higher weights.
+| Samples with higher ```sample_weight``` are given more importance while training the classifier. That is the ```recall``` for *similar samples* will be higher. Can be also imagined as including duplicate samples in training set for samples with higher weights.
 | e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_weighted_samples.html
 
 
