@@ -93,17 +93,19 @@ Here, the default kernel ``rbf`` is first changed to ``linear`` after the
 estimator has been constructed via ``SVC()``, and changed back to ``rbf`` to
 refit the estimator and to make a second prediction.
 
-Working with Unbalanced Dataset
+Working with Imbalanced Dataset
 -------------------------------
+A dataset is imbalanced if the classification categories are not approximately equally represented. Recent years brought increased interest in applying machine learning techniques to difficult real-world problems, many of which are characterized by imbalanced data. Additionally the distribution of the testing data may differ from that of the training data, and the true misclassification costs may be unknown at learning time. Predictive accuracy, a popular choice for evaluating performance of a classifier, might not be appropriate when the data is imbalanced andlor the costs of different errors vary markedly. In this section, we discuss some of the sampling techniques used for working with imbalanced dataset.
+
 Sample Weight
 ~~~~~~~~~~~~~
 
 Samples with higher ```sample_weight``` are given more importance while training the classifier. That is the ```recall``` for _similar samples_ will be higher. Can be also imagined as including duplicate samples in training set for samples with higher weights.
-e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_weighted_samples.html
+|e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_weighted_samples.html
 
 
 Class Weight
 ~~~~~~~~~~~~
 
 Classes with higher ```class_weight``` are given more importance while training the classifier. That is the estimator will try to minimize the error for classes with higher ```class_weight```. **Useful in case of unbalanced training set.**
-e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane_unbalanced.html
+|e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane_unbalanced.html
