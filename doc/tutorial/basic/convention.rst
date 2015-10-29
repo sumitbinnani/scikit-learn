@@ -1,12 +1,12 @@
 Conventions
------------
+===========
 
 scikit-learn estimators follow certain rules to make their behavior more
 predictive.
 
 
 Type casting
-~~~~~~~~~~~~
+------------
 
 Unless otherwise specified, input will be cast to ``float64``::
 
@@ -58,7 +58,7 @@ array, since ``iris.target_names`` was for fitting.
 
 
 Refitting and updating parameters
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 Hyper-parameters of an estimator can be updated after it has been constructed
 via the :func:`sklearn.pipeline.Pipeline.set_params` method. Calling ``fit()``
@@ -93,6 +93,8 @@ Here, the default kernel ``rbf`` is first changed to ``linear`` after the
 estimator has been constructed via ``SVC()``, and changed back to ``rbf`` to
 refit the estimator and to make a second prediction.
 
+Working with Unbalanced Dataset
+-------------------------------
 Sample Weight
 ~~~~~~~~~~~~~
 
