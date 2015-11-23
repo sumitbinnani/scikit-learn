@@ -251,3 +251,5 @@ with::
 Note that pickle has some security and maintainability issues. Please refer to
 section :ref:`model_persistence` for more detailed information about model
 persistence with scikit-learn.
+
+Next: :ref:`conventions`
