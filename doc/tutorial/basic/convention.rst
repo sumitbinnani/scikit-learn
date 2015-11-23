@@ -102,10 +102,13 @@ A dataset is imbalanced if the classification categories are not approximately e
 Sample Weight
 ~~~~~~~~~~~~~
 | Samples with higher ```sample_weight``` are given more importance while training the classifier. That is the ```recall``` for *similar samples* will be higher. Can be also imagined as including duplicate samples in training set for samples with higher weights.
-| e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_weighted_samples.html
+| e.g.
+* Using lower wights for older observations, or observations where for some other reason you have lower confidence in their accuracy
+* :ref:`example_svm_plot_weighted_samples.py`
 
 
 Class Weight
 ~~~~~~~~~~~~
-| Classes with higher ```class_weight``` are given more importance while training the classifier. That is the estimator will try to minimize the error for classes with higher ```class_weight```. **Useful in case of unbalanced training set.**
-| e.g. http://scikit-learn.org/stable/auto_examples/svm/plot_separating_hyperplane_unbalanced.html
+| Classes with higher ```class_weight``` are given more importance while training the classifier. That is the estimator will try to minimize the error for classes with higher ```class_weight```. **Useful in case of unbalanced training set.**. There are preset "balanced" strategies available for most of the classifiers, but that might not be optimal for inseparable classes.
+| e.g.
+* :ref:`example_svm_plot_separating_hyperplane_unbalanced.py`
